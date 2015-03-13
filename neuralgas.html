@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+<title>NerualGas Demo</title>
+<script src="assets/easeljs-0.8.0.min.js"></script>
+<script src="assets/neuralgas.js"></script>
+<script src="assets/neuralgas_demo.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body onload="init()" >
+<center>
+    <h1>NerualGas Demo</h1>
+    <canvas id="Field" width="400" height="400"></canvas>
+    <br>
+    <form>
+        <input type="button" id="button_learn" value="Start" onclick="onclick_StartStop()">
+        <input type="button" id="button_change" value="Change Signal" onclick="ChangeSignal()">
+        <select id="learning_mode" onChange="onChange_LearningMode()">
+            <option value="Batch">Batch Learning</option>
+            <option value="Online">Online Learning</option>
+        </select>
+    </form>
+</center>
+</body>
+</html>
+
