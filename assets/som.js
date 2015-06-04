@@ -134,7 +134,7 @@ SOM.prototype.GetUnitVec = function(i,j)
 
 SOM.prototype.hrs = function(a,b,s)
 {
-    return Math.exp(-(Math.abs(a.x-b.x)+Math.abs(a.y-b.y)) / (2*Math.pow(s,2)));
+    return Math.exp(-((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y)) / (2*s*s));
 }
 
 SOM.prototype.sigma = function()
