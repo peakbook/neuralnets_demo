@@ -51,7 +51,7 @@ function init()
     update_grid();
     stage.update();
 
-    createjs.Ticker.setFPS(30);
+    createjs.Ticker.setFPS(60);
 }
 
 function onclick_StartStop()
@@ -89,7 +89,7 @@ function stop_update()
 }
 
 function update_stage(){
-    for(var i=0;i<5;i++) som.Learning();
+    for(var i=0;i<1;i++) som.Learning();
 
     update_grid();
     update_units_pos();
